@@ -199,13 +199,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 105px;
+    padding: 105px 100px;
 }
 
 /*about box 1,2,3 - in box situation*/
 .about__boxes div{
     display: flex;
-    width: 1124px;
+    /*width: 1124px;*/
     height: 370px;
     background-color: var(--color-white);
     justify-content: center;
@@ -345,14 +345,14 @@ body {
 
 .about__box-3 {
     display: flex;
+    justify-content: space-between;
 }
 
 .about__box-3text {
     display: flex;
     flex-direction: column;
     padding-left: 35px;
-    width: 623px;
-    height: 370px;
+    max-width: 623px;
 }
 
 .about__box-3text::after {
@@ -375,12 +375,12 @@ body {
 }
 
 .trumpet__box-image {
-    width: 440px;
-    height: 370px;
+    width: 300px;
+    height: 300px;
     background-color: var(--color-green);
-    background-size: cover;
-    background-position: center;
     margin-left: 60px;
+    border: 1px solid red;
+    display: block;
 }
 
 /*PRICING*/
@@ -404,6 +404,8 @@ body {
     border: 1px solid var(--color-redish);
     border-radius: 18px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing__module-professional {
@@ -482,9 +484,9 @@ body {
     top: 15px;
 }
 
-li {
-    position: relative;
-}
+/*li {*/
+/*    position: relative;*/
+/*}*/
 
 .pricing__module-btn {
     color: white;
@@ -494,32 +496,119 @@ li {
 
 .pricing__module-basic a{
     padding: 25px 75px;
-    position: relative;
-    left: 90px;
-    top: 60px;
     background-color: var(--color-redish);
 }
 
-.pricing__module-premium a{
-    padding: 25px 75px;
-    position: absolute;
-    left: 90px;
-    top: 460px;
-    background-color: var(--color-green);
+.pricing__module-professional a{
+    padding: 25px 82px;
+    background-color: var(--color-primary);
 }
+.premium::after {
+    content:"Begin";
+    padding: 25px 75px;
+    position: relative;
+    left: 25px;
+    display: inline-block;
+    background-color: var(--color-green);
+    border-radius: 23px;
+}
+
+
 
 /*FORM*/
 
 .form__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 180px;
+    margin-bottom: 60px;
 }
 
-.contact {
-   width: 50%;
+.form__label {
+    font: Bold 11px/15px Open Sans;
+    color: var(--color-primary);
+    font-size: 0.6875rem;
 }
 
+.consent__style {
+    font: 12px/17px Open Sans;
+    color: #707070;
+    text-align: left;
+
+}
+
+.contact__header {
+    font: 49px/57px Raleway;
+    color: var(--color-black);
+    text-align: left;
+}
+
+.contact__info {
+    font: 16px/22px Open Sans;
+    color: var(--color-black);
+    padding: 22px 0 42px 0;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    margin-left: 110px;
+}
+
+.submit__btn {
+    width: 226px;
+    height: 57px;
+    background-color: var(--color-primary);
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    color: var(--color-white);
+    font: Bold 13px/18px Open Sans;
+    padding: 20px 97px;
+    border: none;
+
+}
+.contact__info-email {
+    position: relative;
+    padding-left: 37px;
+}
+.contact__info-email::before {
+    content: "";
+    background-image: url("../assets/Mail Icon.svg");
+    width: 27px;
+    height: 27px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.contact__info-phone {
+    position: relative;
+    padding-left: 57px;
+}
+
+.contact__info-phone::before {
+    content: "";
+    background-image: url("../assets/Phone Icon.svg");
+    width: 27px;
+    height: 27px;
+    top: 0;
+    right: 100px;
+    position: absolute;
+}
+
+.contact__info-email, .contact__info-phone {
+    font: 1rem/22px Open Sans;
+    font-weight: 500;
+    color: var(--color-grey);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+}
 
 
 /*FOOTER*/

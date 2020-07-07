@@ -58,6 +58,7 @@
 <article class="about__background">
 
     <div class="about__boxes">
+
         <div class="about__box-1">
             <div class="about__box-1text">
                 <h2>Be always first</h2>
@@ -77,7 +78,6 @@
             <div class="iphone__box">
                 <img src="assets/iPhone.png" class="iphone">
             </div>
-
         </div>
 
         <div class="about__box-3">
@@ -87,14 +87,11 @@
             </div>
 
             <div class="trumpet__box-image">
-                <img src="assets/Trumpet.png" class="trumpet">
+<!--                <img src="assets/Trumpet.png" class="trumpet">-->
             </div>
+        </div>
 
     </div>
-
-
-
-</div>
 </article>
 
 <article>
@@ -126,6 +123,7 @@
                 <li>One years licence</li>
                 <li>Full support</li>
             </ul>
+            <a href="/" class="pricing__module-btn">Begin</a>
         </div>
 
         <div class="pricing__module-premium">
@@ -139,7 +137,7 @@
                 <li>Two years licence</li>
                 <li>Full support</li>
             </ul>
-            <a href="/" class="pricing__module-btn">Begin</a>
+            <a href="/" class="pricing__module-btn premium">Begin</a>
         </div>
 
     </div>
@@ -149,26 +147,29 @@
 
 <div class="form__container">
     <div class="contact">
-        Any questions?
-        <p>Leave your email address or call us!</p>
+        <p class="contact__header"> Any questions?</p>
+        <p class="contact__info">Leave your email address or call us!</p>
+        <span class="contact__info-email">info@bestshop.xyz</span>
+        <span class="contact__info-phone">123 456 789</span>
     </div>
-    <div class="form">
-    <form>
-        <label for="name">NAME</label>
-        <imput type="text" id="name" name="name" id="name"></imput>
+
+    <form class="form">
+        <label class="form__label">NAME</label>
+        <input type="text" id="name">
         <br>
 
-        <label>EMAIL</label>
-        <imput type="email" id="email" name="email"></imput>
+        <label class="form__label">EMAIL</label>
+        <input type="email" id="email" name="email">
         <br>
 
-        <label>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
-        <imput type="checkbox" name="agreement" value="1"></imput>
-        </label>
-        <button type="submit">Send</button>
+
+        <input type="checkbox" name="agreement" value="1">
+        <label class="consent__style">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+
+        <button type="submit" class="submit__btn">Send</button>
 
     </form>
-    </div>
+
 
 
 </div>
