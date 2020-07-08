@@ -567,6 +567,7 @@ body {
     font: Bold 13px/18px Open Sans;
     padding: 20px 97px;
     border: none;
+    margin-top: 20px;
 
 }
 .contact__info-email {
@@ -633,3 +634,6 @@ input {
     flex-direction: column;
 }
 
+.footer__facebook {
+    margin-left: 20px;
+}
