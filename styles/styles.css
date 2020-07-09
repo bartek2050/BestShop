@@ -415,6 +415,7 @@ body {
     border-radius: 18px;
     box-shadow: 5px 10px 27px var(--color-primary-shadow);
     margin: 0 60px;
+    position: relative;
 
 }
 
@@ -439,7 +440,8 @@ body {
 .pricing__module-items {
     text-align: center;
     font: 14px/41px Open Sans;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .limited__offer {
@@ -473,44 +475,76 @@ body {
     text-align: center;
     padding-top: 72px;
 }
-
-.pricing__module-items li:first-of-type::before {
+li {
+    position: relative;
+    display: inline-block;
+}
+.positive::before {
     content: "";
+    background-image: url("../assets/Ckechmark-1.svg");
     width: 11px;
     height: 11px;
-    border: 1px solid var(--color-green);
-    border-radius: 2px;
     position: absolute;
     top: 15px;
+    left: 110px;
+}
+
+.negative::before {
+    content: "";
+    background-image: url("../assets/Close.svg");
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 15px;
+    left: 110px;
 }
 
 /*li {*/
 /*    position: relative;*/
 /*}*/
 
-.pricing__module-btn {
-    color: white;
-    border-radius: 23px;
-    text-align: center;
-}
+/*.pricing__module-btn {*/
+/*    color: white;*/
+/*    border-radius: 23px;*/
+/*    text-align: center;*/
+/*}*/
 
-.pricing__module-basic a{
-    padding: 25px 75px;
-    background-color: var(--color-redish);
-}
 
-.pricing__module-professional a{
-    padding: 25px 82px;
-    background-color: var(--color-primary);
-}
-.premium::after {
+
+
+.basic::before {
     content:"Begin";
     padding: 25px 75px;
     position: relative;
-    left: 25px;
+    top:40px;
+    left: 70px;
+    display: inline-block;
+    background-color: var(--color-redish);
+    border-radius: 23px;
+    color: white;
+}
+
+.professional::before {
+    content:"Begin";
+    padding: 25px 82px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    display: inline-block;
+    background-color: var(--color-primary);
+    border-radius: 23px;
+    color: white;
+}
+
+.premium::before {
+    content:"Begin";
+    padding: 25px 75px;
+    position: relative;
+    left: 90px;
     display: inline-block;
     background-color: var(--color-green);
     border-radius: 23px;
+    color: white;
 }
 
 
