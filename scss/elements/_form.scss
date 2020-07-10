@@ -1,0 +1,94 @@
+.form__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    margin-bottom: 60px;
+}
+
+.form__label {
+    font: Bold 11px/15px Open Sans;
+    color: var(--color-primary);
+    font-size: 0.6875rem;
+}
+
+.consent__style {
+    font: 12px/17px Open Sans;
+    color: #707070;
+    text-align: left;
+
+}
+
+.contact__header {
+    font: 49px/57px Raleway;
+    color: var(--color-black);
+    text-align: left;
+}
+
+.contact__info {
+    font: 16px/22px Open Sans;
+    color: var(--color-black);
+    padding: 22px 0 42px 0;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    margin-left: 110px;
+}
+
+.submit__btn {
+    width: 226px;
+    height: 57px;
+    background-color: var(--color-primary);
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    color: var(--color-white);
+    font: Bold 13px/18px Open Sans;
+    padding: 20px 97px;
+    border: none;
+    margin-top: 20px;
+
+}
+.contact__info-email {
+    position: relative;
+    padding-left: 37px;
+}
+.contact__info-email::before {
+    content: "";
+    background-image: url("../assets/Mail Icon.svg");
+    width: 27px;
+    height: 27px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.contact__info-phone {
+    position: relative;
+    padding-left: 57px;
+}
+
+.contact__info-phone::before {
+    content: "";
+    background-image: url("../assets/Phone Icon.svg");
+    width: 27px;
+    height: 27px;
+    top: 0;
+    right: 100px;
+    position: absolute;
+}
+
+.contact__info-email, .contact__info-phone {
+    font: 1rem/22px Open Sans;
+    font-weight: 500;
+    color: var(--color-grey);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+}
+

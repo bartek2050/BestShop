@@ -1,0 +1,80 @@
+.main__background-under {
+    text-align: center;
+    font: 2.25em/2.625em Raleway;
+    padding: 100px 0;
+}
+
+.main__background-circles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 188px;
+}
+
+.main__background-circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+}
+
+.circle__1 {
+    background-color: var(--color-redish);
+}
+.circle__2 {
+    background-color: var(--color-primary);
+}
+.circle__3 {
+    background-color: var(--color-green);
+}
+
+.circle__1::before {
+    content: "";
+    background-image: url("../assets/Person.svg");
+    top: 0;
+    left: 20px;
+    background-size: cover;
+    position: relative;
+    width: 44px;
+    height: 52px;
+}
+.circle__2::before {
+    content: "";
+    background-image: url("../assets/Eye.svg");
+    top: 15px;
+    left: 20px;
+    background-size: cover;
+    position: relative;
+    width: 65px;
+    height: 37px;
+}
+.circle__3::before {
+    content: "";
+    background-image: url("../assets/Catalog.svg");
+    top: 5px;
+    left: 20px;
+    background-size: cover;
+    position: relative;
+    width: 52px;
+    height: 48px;
+}
+
+
+.main__background-circles div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__background-numbers {
+    text-align: center;
+    font: 1.25em/1.5em Raleway;
+    font-weight: bolder;
+    letter-spacing: 6px;
+    padding: 14px 0 19px 0;
+}
+
+.main__background-numbersinfo {
+    text-align: center;
+    font: 1.0625em/1.25em Raleway;
+    letter-spacing: 0px;
+    color: var(--color-grey);
+}

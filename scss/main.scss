@@ -1,0 +1,17 @@
+@import "generic/_reset";
+@import "settings/settings";
+@import "elements/_about";
+@import "elements/background";
+@import "settings/colors";
+@import "elements/footer";
+@import "elements/form";
+@import "elements/header";
+@import "elements/pricing";
+@import "elements/statistics";
+
+
+@media (max-width: 800px) {
+    body {
+        background-color: #FB3B64;
+    }
+}
