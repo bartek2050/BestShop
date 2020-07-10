@@ -200,14 +200,15 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 105px 100px;
+    justify-content: space-between;
 }
 
 /*about box 1,2,3 - in box situation*/
 .about__boxes div{
     display: flex;
-    /*width: 1124px;*/
+    width: 1124px;
     height: 370px;
-    background-color: var(--color-white);
+    flex-grow: 1;
     justify-content: center;
 
 }
@@ -245,6 +246,12 @@ body {
 }
 
 /*BOX1*/
+.about__box-1 {
+    border: 1px solid var(--color-grey);
+    border-radius: 5px;
+    background-color: var(--color-white);
+}
+
 
 .about__box-1text {
     display: flex;
@@ -275,7 +282,6 @@ body {
 .macbook__box {
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
 }
 
 .about__box-1text::after {
@@ -298,6 +304,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
+    border-radius: 5px;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-white);
+    justify-content: space-between;
 }
 
 .about__box-2text {
@@ -345,14 +355,17 @@ body {
 
 .about__box-3 {
     display: flex;
-    justify-content: space-between;
+
 }
 
 .about__box-3text {
     display: flex;
     flex-direction: column;
     padding-left: 35px;
-    max-width: 623px;
+    max-width: 620px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 5px;
 }
 
 .about__box-3text::after {
@@ -368,19 +381,24 @@ body {
 }
 
 .about__box-3text p{
-    padding: 30px 169px 50px 35px;}
+    padding: 30px 169px 50px 0;}
 
-.about__box-3text h2{
-    padding-left: 30px;
-}
+
 
 .trumpet__box-image {
-    width: 300px;
-    height: 300px;
+
+    flex-grow: 1;
     background-color: var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 60px;
-    border: 1px solid red;
-    display: block;
+}
+
+.trumpet {
+    width: 295px;
+    height: auto;
+    margin-top: 55px;
 }
 
 /*PRICING*/
@@ -670,4 +688,10 @@ input {
 
 .footer__facebook {
     margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    body {
+        background-color: #FB3B64;
+    }
 }
