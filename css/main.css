@@ -641,11 +641,15 @@ body {
 .copyrights {
   font: 11px/15px Open Sans;
   color: var(--color-grey);
+  margin-bottom: 16px;
 }
 
 .footer__content-left {
   display: flex;
   flex-direction: column;
+}
+.footer__content-left .logo {
+  margin-bottom: -15px;
 }
 
 .footer__facebook {
@@ -701,6 +705,8 @@ body {
   padding: 20px 97px;
   border: none;
   margin-top: 20px;
+  display: block;
+  align-self: flex-end;
 }
 
 .contact__info-email {
@@ -737,6 +743,39 @@ body {
   font: 1rem/22px Open Sans;
   font-weight: 500;
   color: var(--color-grey);
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+}
+
+.checkbox span {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-grey);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.checkbox input:checked + span {
+  background-image: url("../../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form__consent-checkbox {
+  display: flex;
 }
 
 input {
@@ -903,8 +942,8 @@ li {
   content: "Begin";
   padding: 25px 75px;
   position: relative;
-  top: 40px;
-  left: 70px;
+  top: 70px;
+  left: 90px;
   display: inline-block;
   background-color: var(--color-redish);
   border-radius: 23px;
@@ -916,7 +955,7 @@ li {
   padding: 25px 82px;
   position: relative;
   left: 100px;
-  top: 50px;
+  top: 80px;
   display: inline-block;
   background-color: var(--color-primary);
   border-radius: 23px;
@@ -928,6 +967,7 @@ li {
   padding: 25px 75px;
   position: relative;
   left: 90px;
+  top: 40px;
   display: inline-block;
   background-color: var(--color-green);
   border-radius: 23px;

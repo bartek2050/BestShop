@@ -16,6 +16,7 @@
     color: #707070;
     text-align: left;
 
+
 }
 
 .contact__header {
@@ -49,6 +50,8 @@
     padding: 20px 97px;
     border: none;
     margin-top: 20px;
+    display: block;
+    align-self: flex-end;
 
 }
 .contact__info-email {
@@ -84,6 +87,41 @@
     font: 1rem/22px Open Sans;
     font-weight: 500;
     color: var(--color-grey);
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox span {
+    height: 24px;
+    width: 24px;
+    flex-shrink: 0;
+    //flex-basis: 60px;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox input:checked + span {
+    background-image: url("../../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: cover;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.form__consent-checkbox {
+    display: flex;
 }
 
 input {
