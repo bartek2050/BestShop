@@ -26,7 +26,7 @@
 }
 
 .contact__info {
-    font: 16px/22px Open Sans;
+    font: 1em/1.375em Open Sans;
     color: var(--color-black);
     padding: 22px 0 42px 0;
 
@@ -60,7 +60,7 @@
 }
 .contact__info-email::before {
     content: "";
-    background-image: url("../assets/Mail Icon.svg");
+    background-image: url("../../assets/Mail Icon.svg");
     width: 27px;
     height: 27px;
     top: 0;
@@ -70,12 +70,12 @@
 
 .contact__info-phone {
     position: relative;
-    padding-left: 57px;
+    padding-left: 37px;
 }
 
 .contact__info-phone::before {
     content: "";
-    background-image: url("../assets/Phone Icon.svg");
+    background-image: url("../../assets/Phone Icon.svg");
     width: 27px;
     height: 27px;
     top: 0;
@@ -84,7 +84,7 @@
 }
 
 .contact__info-email, .contact__info-phone {
-    font: 1rem/22px Open Sans;
+    font: 1em/1.375em Open Sans;
     font-weight: 500;
     color: var(--color-grey);
 }
@@ -103,6 +103,7 @@
     border-radius: 4px;
     cursor: pointer;
     margin-right: 15px;
+    background-color: transparent;
 }
 
 .checkbox input:checked + span {
@@ -130,3 +131,75 @@ input {
     outline: none;
 }
 
+
+
+//----------------------------------------------
+//MEDIA
+
+@media (max-width: 880px) {
+    .form__container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .contact {
+        margin-bottom: 56px;
+        margin-left: 100px;
+        span {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+        }
+    }
+    .contact__info-phone::before {
+        content: "";
+        background-image: url("../../assets/Phone Icon.svg");
+        width: 27px;
+        height: 27px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .contact__info-email {
+        margin-bottom: 12px;
+    }
+    .contact__info {
+        padding: 5px 0 15px 0;
+
+    }
+    .form__label {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .form {
+        input {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .contact__header {
+        font: 40px/47px Raleway;
+        color: var(--color-black);
+        text-align: left;
+    }
+    .form__container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .contact {
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
+
+}

@@ -9,7 +9,7 @@
 }
 
 .main__background p {
-    padding: 20px 0 60px 0;
+    padding: 0 0 60px 0;
     font: 1em/1.375em Open Sans;
     color: var(--color-black)
 }
@@ -31,4 +31,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+}
+
+@media (max-width: 500px) {
+    .main__background a{
+        width: 310px;
+        height: 67px;
+        background-color: var(--color-primary);
+        border-radius: 40px;
+        box-shadow: 5px 10px 14px var(--color-primary-shadow);
+        color: var(--color-white);
+        font: Bold 1em/1.375em Open Sans;
+        padding: 22px 92px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+    .main__background-h1 {
+        padding-top: 130px;
+        font: 2.1875em/3.5625em Raleway;
+        color: var(--color-black);
+    }
+
+    .background__image {
+        padding-top: 50px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
 }

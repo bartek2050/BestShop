@@ -34,11 +34,6 @@
     z-index: 1;
 }
 
-.trumpet {
-    width: 296px;
-    height: 208px;
-    z-index: 1;
-}
 
 
 .about__boxes h2:first-of-type {
@@ -55,7 +50,7 @@
 
 /*BOX1*/
 .about__box-1 {
-    border: 1px solid var(--color-grey);
+    border: 1px solid #E8E9ED;
     border-radius: 5px;
     background-color: var(--color-white);
 }
@@ -113,7 +108,7 @@
     flex-direction: row-reverse;
     position: relative;
     border-radius: 5px;
-    border: 1px solid var(--color-grey);
+    border: 1px solid #E8E9ED;
     background-color: var(--color-white);
     justify-content: space-between;
 }
@@ -172,7 +167,7 @@
     padding-left: 35px;
     max-width: 620px;
     background-color: var(--color-white);
-    border: 1px solid var(--color-grey);
+    border: 1px solid #E8E9ED;
     border-radius: 5px;
 }
 
@@ -207,4 +202,204 @@
     width: 295px;
     height: auto;
     margin-top: 55px;
+}
+
+//@media (max-width: 1120px) {
+//    .about__boxes div{
+//        flex-direction: column;
+//    }
+//}
+
+@media (max-width: 700px) {
+    .about__box-1text::after {
+        display: none;
+    }
+    .about__box-2text::after {
+        display: none;
+    }
+    .about__box-3text::after {
+        display: none;
+    }
+
+    .macbook__box::after {
+        display: none;
+    }
+
+    .about__boxes {
+        padding: 40px 30px;
+    }
+
+    .about__boxes div{
+        display: flex;
+        width: 100%;
+        //height: 370px;
+        //justify-content: center;
+
+    }
+
+    .about__boxes h2:first-of-type {
+        text-align: left;
+        font: 1.875em/35px Raleway, sans-serif;
+        font-weight: 400;
+    }
+
+    .about__boxes p:first-of-type {
+        text-align: left;
+        font: 0.875em/19px Open Sans, sans-serif;
+        font-weight: 400;
+    }
+
+
+    /*BOX1*/
+
+    .macbook__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .macbook {
+        width: 190px;
+        height: 110px;
+        z-index: 1;
+
+    }
+    .about__box-1 {
+        border: 1px solid #E8E9ED;
+        border-radius: 5px;
+        background-color: var(--color-white);
+        width: 315px;
+        height: 370px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .about__box-1text {
+        display: flex;
+        padding: 20px;
+
+    }
+
+    .about__box-1text p{
+        padding: 0;
+    }
+
+    .about__box-1text h2{
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .about__box-1::after {
+        content: "";
+        width: 90px;
+        height: 90px;
+        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        background-color: var(--color-redish);
+        border-radius: 41px;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+    }
+
+
+
+    /*BOX2*/
+
+    .about__box-2 {
+        margin: 20px 0 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        border-radius: 5px;
+        border: 1px solid #E8E9ED;
+        background-color: var(--color-white);
+        justify-content: space-between;
+    }
+
+    .about__box-2text {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about__box-2text h2{
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .about__box-2text p{
+        padding: 0;
+    }
+
+    .iphone__box {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .iphone__box::before {
+        content: "";
+        display: block;
+        width: 130px;
+        height: 130px;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 70px;
+    }
+
+    .iphone {
+        width: 175px;
+        height: 135px;
+        z-index: 1;
+    }
+
+    /*BOX 3*/
+
+    .about__box-3 {
+        display: flex;
+        flex-direction: column;
+        margin: 90px 0;
+
+    }
+
+    .about__box-3text {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-width: 620px;
+        background-color: var(--color-white);
+        border: 1px solid #E8E9ED;
+        border-radius: 5px;
+    }
+
+
+    .about__box-3text p{
+        padding: 25px 0;
+    }
+
+
+
+    .trumpet__box-image {
+        margin-left: 0;
+        background-color: var(--color-green);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trumpet {
+        //width: 295px;
+        height: 195px;
+        //margin-top: 55px;
+    }
+
+
+
 }

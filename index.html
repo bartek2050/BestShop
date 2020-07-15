@@ -15,6 +15,12 @@
     <div class="container header__content">
     <a href="/" class="logo">BestShop</a>
     <nav class="menu__nav">
+        <input type="checkbox" class="menu__btn-mobile" id="menu__btn-mobile" >
+        <label for="menu__btn-mobile" class="menu__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <li class="menu__list">
             <ul><a href="#" class="menu__list-element">Why Us</a></ul>
             <ul><a href="#" class="menu__list-element">Benefits</a></ul>
@@ -101,8 +107,10 @@
     <div class="pricing__module">
 
         <div class="pricing__module-basic">
-            <h4 class="pricing__module-header">Basic</h4>
-            <p class="price__basic">$0</p>
+            <div class="pricing__module-basichp">
+                <h4 class="pricing__module-header">Basic</h4>
+                 <p class="price__basic">$0</p>
+            </div>
             <ul class="pricing__module-items">
                 <li class="positive">100 MB HDD</li>
                 <li class="positive">1 Subdomain</li>
@@ -114,9 +122,11 @@
         </div>
 
         <div class="pricing__module-professional">
+            <div class="pricing__module-professionalhp">
             <h4 class="pricing__module-header">Professional</h4>
             <p class="price__professional">$25</p>
             <p class="limited__offer">Limited offer</p>
+        </div>
             <ul class="pricing__module-items">
                 <li class="positive">500 MB HDD</li>
                 <li class="positive">2 Subdomain</li>
@@ -128,9 +138,11 @@
         </div>
 
         <div class="pricing__module-premium">
+            <div class="pricing__module-premiumhp">
             <h4 class="pricing__module-header">Premium</h4>
             <p class="price__premium">$60</p>
             <p class="limited__offer">Limited offer</p>
+            </div>
             <ul class="pricing__module-items">
                 <li class="positive">2 GB HDD</li>
                 <li class="positive">5 Subdomain</li>
@@ -150,8 +162,8 @@
     <div class="contact">
         <p class="contact__header"> Any questions?</p>
         <p class="contact__info">Leave your email address or call us!</p>
-        <span class="contact__info-email">info@bestshop.xyz</span>
-        <span class="contact__info-phone">123 456 789</span>
+        <p class="contact__info-email">info@bestshop.xyz</p>
+        <p class="contact__info-phone">123 456 789</p>
     </div>
 
     <form class="form">
@@ -183,7 +195,7 @@
     <div class="footer__content container">
         <div class="footer__content-left">
         <a href="/" class="logo">BestShop</a>
-        <span class="copyrights">© 2019 BestShop LTD, All Rights Reserved</span>
+        <p class="copyrights">© 2019 BestShop LTD, All Rights Reserved</p>
         </div>
         <div class="footer__social">
             <a href="/" class="footer__twitter"><img src="assets/Twitter.svg"></a>

@@ -149,4 +149,188 @@ li {
     color: white;
 }
 
+@media (max-width: 1200px) {
+    .pricing__module {
+        flex-direction: column;
+    }
+    .pricing__module-professional {
+        margin: 54px 0;
+    }
+}
+
+
+//----------------------------------------------
+//MEDIA
+
+@media (max-width: 600px) {
+
+    .pricing {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        font: 2.25em/2.625em Raleway;
+    }
+
+    .pricing__module-header {
+        font: Bold 20px/1px Raleway;
+        text-align: center;
+        padding-top: 34px;
+        padding-left: 35px;
+    }
+
+    .positive::before {
+        content: "";
+        background-image: url("../assets/Ckechmark-1.svg");
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        top: 12px;
+        left: -20px;
+    }
+
+    .negative::before {
+        content: "";
+        background-image: url("../assets/Close.svg");
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        top: 12px;
+        left: -20px;
+    }
+
+    .pricing__module-items {
+        text-align: center;
+        font: 0.875em/2.5625em Open Sans;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+
+    .limited__offer {
+        padding-left: 35px;
+    }
+
+    //BASIC
+
+
+    .pricing__module-basic {
+        width: 290px;
+        height: 250px;
+        border: 1px solid var(--color-redish);
+        border-radius: 18px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        //align-items: center;
+    }
+
+    .pricing__module-basichp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price__basic {
+        padding-left: 35px;
+        padding-top: 40px;
+    }
+
+    .basic::before {
+        content:"Begin";
+        padding: 16px 57px;
+        position: absolute;
+        top:220px;
+        left: 65px;
+        display: inline-block;
+        background-color: var(--color-redish);
+        border-radius: 23px;
+        color: white;
+    }
+
+//PROFESSIONAL
+
+    .pricing__module-professional {
+        width: 340px;
+        height: 275px;
+        border: 1px solid var(--color-primary);
+        border-radius: 18px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        //align-items: center;
+    }
+
+    .pricing__module-professionalhp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price__professional {
+        padding-left: 35px;
+        padding-top: 40px;
+    }
+
+    .professional::before {
+        content:"Begin";
+        padding: 16px 57px;
+        position: absolute;
+        top:245px;
+        left: 90px;
+        display: inline-block;
+        background-color: var(--color-primary);
+        border-radius: 23px;
+        color: white;
+    }
+
+
+
+
+
+    //PREMIUM
+
+
+    .pricing__module-premium {
+        width: 290px;
+        height: 250px;
+        border: 1px solid var(--color-green);
+        border-radius: 18px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        //align-items: center;
+    }
+
+    .pricing__module-premiumhp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price__premium {
+        padding-left: 35px;
+        padding-top: 40px;
+    }
+
+    .premium::before {
+        content:"Begin";
+        padding: 16px 57px;
+        position: absolute;
+        top:220px;
+        left: 65px;
+        display: inline-block;
+        background-color: var(--color-green);
+        border-radius: 23px;
+        color: white;
+    }
+
+
+
+
+}
 
